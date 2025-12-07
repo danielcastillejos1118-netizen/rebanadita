@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizzas Especiales – Rebanadita</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="logo">
+    <img src="logo-rebanadita.jpg" alt="Rebanadita">
+    <span>Rebanadita</span>
+  </div>
+</header>
+
+<div class="layout">
+
+<nav class="sidebar">
+  <a href="index.html">🏠 Inicio</a>
+  <a href="menu.html">📋 Menú</a>
+  <a href="menu-pizzas.html" class="active">🍕 Pizzas Especiales</a>
+  <a href="indexJ.html">🎮 Juegos</a>
+</nav>
+
+<main class="content">
+  <a href="index.html" class="back-btn">⬅ Regresar</a>
+
+  <h2>Pizzas Especiales 🍕</h2>
+
+  <div class="menu-grid">
+
+    <!-- COCHE HAWAIANA -->
+    <div class="product-card"
+      data-name="Pizza Coche Hawaiana"
+      data-price="120">
+
+      <img src="img/coche-hawaiiana.jpg" alt="Coche Hawaiana">
+      <h3>🚗 Coche Hawaiana</h3>
+      <p class="price">$120</p>
+
+      <div class="qty-control">
+        <button class="minus">−</button>
+        <span class="qty">1</span>
+        <button class="plus">+</button>
+      </div>
+
+      <button class="btn-add add-btn">Agregar al carrito</button>
+    </div>
+
+    <!-- COCHE PEPPERONI -->
+    <div class="product-card"
+      data-name="Pizza Coche Pepperoni"
+      data-price="120">
+
+      <img src="img/coche-pepperoni.jpg" alt="Coche Pepperoni">
+      <h3>🚗 Coche Pepperoni</h3>
+      <p class="price">$120</p>
+
+      <div class="qty-control">
+        <button class="minus">−</button>
+        <span class="qty">1</span>
+        <button class="plus">+</button>
+      </div>
+
+      <button class="btn-add add-btn">Agregar al carrito</button>
+    </div>
+
+    <!-- CORAZÓN HAWAIANA -->
+    <div class="product-card"
+      data-name="Pizza Corazón Hawaiana"
+      data-price="130">
+
+      <img src="img/corazon-hawaiiana.jpg" alt="Corazón Hawaiana">
+      <h3>❤️ Corazón Hawaiana</h3>
+      <p class="price">$130</p>
+
+      <div class="qty-control">
+        <button class="minus">−</button>
+        <span class="qty">1</span>
+        <button class="plus">+</button>
+      </div>
+
+      <button class="btn-add add-btn">Agregar al carrito</button>
+    </div>
+
+    <!-- CORAZÓN PEPPERONI -->
+    <div class="product-card"
+      data-name="Pizza Corazón Pepperoni"
+      data-price="130">
+
+      <img src="img/corazon-pepperoni.jpg" alt="Corazón Pepperoni">
+      <h3>❤️ Corazón Pepperoni</h3>
+      <p class="price">$130</p>
+
+      <div class="qty-control">
+        <button class="minus">−</button>
+        <span class="qty">1</span>
+        <button class="plus">+</button>
+      </div>
+
+      <button class="btn-add add-btn">Agregar al carrito</button>
+    </div>
+
+    <!-- DINOSAURIO -->
+    <div class="product-card"
+      data-name="Pizza Dinosaurio Pepperoni"
+      data-price="120">
+
+      <img src="img/dinosaurio.jpg" alt="Dinosaurio Pepperoni">
+      <h3>🦖 Dinosaurio Pepperoni</h3>
+      <p class="price">$120</p>
+
+      <div class="qty-control">
+        <button class="minus">−</button>
+        <span class="qty">1</span>
+        <button class="plus">+</button>
+      </div>
+
+      <button class="btn-add add-btn">Agregar al carrito</button>
+    </div>
+
+    <!-- MARIPOSA -->
+    <div class="product-card"
+      data-name="Pizza Mariposa Pepperoni"
+      data-price="120">
+
+      <img src="img/mariposa.jpg" alt="Mariposa Pepperoni">
+      <h3>🦋 Mariposa Pepperoni</h3>
+      <p class="price">$120</p>
+
+      <div class="qty-control">
+        <button class="minus">−</button>
+        <span class="qty">1</span>
+        <button class="plus">+</button>
+      </div>
+
+      <button class="btn-add add-btn">Agregar al carrito</button>
+    </div>
+
+    <!-- OSO -->
+    <div class="product-card"
+      data-name="Pizza Oso Queso"
+      data-price="120">
+
+      <img src="img/oso.jpg" alt="Oso Queso">
+      <h3>🐻 Oso Queso</h3>
+      <p class="price">$120</p>
+
+      <div class="qty-control">
+        <button class="minus">−</button>
+        <span class="qty">1</span>
+        <button class="plus">+</button>
+      </div>
+
+      <button class="btn-add add-btn">Agregar al carrito</button>
+    </div>
+
+  </div>
+</main>
+
+<aside class="cart">
+  <aside class="cart">
+  <h3>🛒 Carrito</h3>
+
+  <ul id="cart-items" class="cart-items"></ul>
+
+  <p>Total: $<span id="cart-total">0.00</span></p>
+
+  <p><strong>Forma de pago</strong></p>
+  <label>
+    <input type="radio" name="payment" value="Tarjeta" checked>
+    💳 Tarjeta
+  </label><br>
+
+  <label>
+    <input type="radio" name="payment" value="Efectivo">
+    💵 Efectivo
+  </label>
+
+  <br><br>
+
+  <button class="btn-pay" id="pay-btn">Pagar</button>
+
+  <div class="promo-banner">MIÉRCOLES 2×1</div>
+</aside>
+
+</aside>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
